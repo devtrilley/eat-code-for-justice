@@ -1,0 +1,157 @@
+/* Main on my donate page to override anything in general css stylings */
+main {
+  gap: 1%;
+  align-items: stretch;
+}
+
+.donate-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* border: 2px solid magenta; */
+  width: 35%;
+  aspect-ratio: 1;
+}
+
+.frequency-container {
+  display: flex;
+  /* border: 2px solid magenta; */
+  width: 80%;
+  gap: 1%;
+}
+
+.frequency-container button {
+  background-color: #5b7e98;
+  color: white;
+  padding: 1rem;
+  width: 100%;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  border-radius: 2px;
+}
+
+.frequency-container button:hover {
+  background-color: #55768f;
+}
+
+.frequency-container button:active {
+  background-color: #506f87;
+}
+
+.amount-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3%;
+  row-gap: 3%;
+  /* border: 1px solid green; */
+  padding: 2rem;
+  padding-bottom: 3rem;
+  width: 80%;
+}
+
+.amount-grid button {
+  padding: 1rem 2.5rem;
+  border: none;
+  border-radius: 1.5rem;
+  background-color: #c6ad25;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.1s;
+  color: #fff;
+}
+
+.amount-grid button:hover {
+  background-color: #d8be28;
+}
+
+.amount-grid button:active {
+  background-color: #e4c82b;
+}
+
+.custom-donation-button {
+  grid-column: span 2;
+}
+
+.placeholder-img {
+  width: 350px;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px rgb(163, 163, 163);
+  transition: box-shadow 0.5s, width 0.2s;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.placeholder-img:hover {
+  box-shadow: 0px 0px 24px #5b7e98;
+  /* width: 355px;  Experiment with this transition later */
+}
+
+.heading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.donate-heading,
+.form-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.confirm-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1%;
+  min-width: 100%;
+  margin-bottom: 1rem;
+}
+
+#confirm-check {
+  width: 1rem;
+  aspect-ratio: 1;
+  cursor: pointer;
+}
+
+.confirm-message {
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+.donate-button {
+  background-color: #5b7e98;
+  color: white;
+  padding: 1rem;
+  width: 80%;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  border-radius: 2px;
+}
+
+.donate-button:hover {
+  background-color: #55768f;
+}
+
+.donate-button:active {
+  background-color: #506f87;
+}
+
+.charity-name {
+  font-weight: bold;
+  font-size: 1.25rem;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.donate-quote {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}

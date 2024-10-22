@@ -11,21 +11,43 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: antiquewhite;
-  border: 1px solid green;
+  background-color: whitesmoke;
+  border: 3px solid red;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 5rem 6rem;
+  color: #666a6d;
 }
 
 main {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  background-color: white;
-  border: 1px solid magenta;
+  justify-content: center;
+  /* border: 2px solid magenta; */
+  width: 100%;
 }
 
 header,
 footer {
   display: flex;
   background-color: rgb(156, 156, 230);
-  border: 1px solid magenta;
+  /* border: 1px solid magenta; */
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+/* Add this class to italicize text */
+.italics {
+  font-style: italic;
 }

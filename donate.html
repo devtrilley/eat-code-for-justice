@@ -5,8 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EAT: Donate</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="donate.css" />
   </head>
   <body>
+    <header>
+      <img src="put-logo-here" alt="EAT Logo" />
+      <p>REPLACE WITH NAVBAR</p>
+    </header>
+    <main>
+      <div class="donate-container">
+        <div class="heading-container">
+          <h2 class="donate-heading">Donate Now</h2>
+          <h2 class="donate-heading">and change a life</h2>
+        </div>
+        <p class="charity-name italics">The Hungry Mouths Foundation</p>
+        <img
+          src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png"
+          alt="Placeholder Image"
+          class="placeholder-img"
+        />
+        <p class="donate-quote">"<span class="italics">The war against hunger is truly mankind’s war of liberation." - JFK</span></p>
+      </div>
+      <form class="donate-container donate-form">
+        <h2 class="form-heading">Secure donation</h2>
+        <div class="frequency-container">
+          <!-- Find what's the suitable type -->
+          <button type="button">Once</button>
+          <button type="button">Monthly</button>
+        </div>
+        <div class="amount-grid">
+          <button type="button">$25</button>
+          <button type="button">$50</button>
+          <button type="button">$100</button><button>$250</button>
+          <button type="button">$500</button>
+          <button type="button">$1000</button>
+          <button type="button" class="custom-donation-button">Custom</button>
+        </div>
+        <div class="confirm-container">
+          <input type="checkbox" name="confirm-check" id="confirm-check" />
+          <label for="confirm-check" class="confirm-message"
+            >Dedicate this donation</label
+          >
+        </div>
+        <button class="donate-button" type="submit">Donate</button>
+      </form>
+    </main>
+    <footer>
+      <!-- Sample Footer Text -->
+      <p>&copy; 2024 EAT, Inc. All Rights Reserved</p>
+      <p>"No mouth left unfed"</p>
+      <p>E.A.T: Everybody at The Table</p>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>
