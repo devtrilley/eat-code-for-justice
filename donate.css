@@ -10,7 +10,7 @@ main {
   align-items: center;
   justify-content: center;
   /* border: 2px solid magenta; */
-  width: 35%;
+  width: 45%;
   aspect-ratio: 1;
 }
 
@@ -22,7 +22,7 @@ main {
 }
 
 .frequency-container button {
-  background-color: #5b7e98;
+  background-color: #336021;
   color: white;
   padding: 1rem;
   width: 100%;
@@ -31,14 +31,15 @@ main {
   cursor: pointer;
   border: none;
   border-radius: 2px;
+  transition: background-color 0.2s;
 }
 
 .frequency-container button:hover {
-  background-color: #55768f;
+  background-color: #40772a;
 }
 
 .frequency-container button:active {
-  background-color: #506f87;
+  background-color: #4a8931;
 }
 
 .amount-grid {
@@ -56,39 +57,40 @@ main {
   padding: 1rem 2.5rem;
   border: none;
   border-radius: 1.5rem;
-  background-color: #c6ad25;
+  background-color: #e68c3a;
   font-size: 1.5rem;
   cursor: pointer;
-  transition: background-color 0.1s;
+  transition: background-color 0.2s;
   color: #fff;
 }
 
 .amount-grid button:hover {
-  background-color: #d8be28;
+  background-color: #f3953d;
 }
 
 .amount-grid button:active {
-  background-color: #e4c82b;
+  background-color: #ff9d41;
 }
 
 .custom-donation-button {
   grid-column: span 2;
 }
 
-.placeholder-img {
+.charity-img {
   width: 350px;
   aspect-ratio: 1;
   object-fit: cover;
   border-radius: 50%;
   box-shadow: 0px 0px 10px rgb(163, 163, 163);
-  transition: box-shadow 0.5s, width 0.2s;
+  transition: box-shadow 0.5s, width 0.75s, border-radius 0.75s ease;
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
 }
 
-.placeholder-img:hover {
-  box-shadow: 0px 0px 24px #5b7e98;
-  /* width: 355px;  Experiment with this transition later */
+.charity-img:hover {
+  box-shadow: 0px 0px 24px #40772a;
+  width: 375px;
+  border-radius: 25%;
 }
 
 .heading-container {
@@ -99,7 +101,7 @@ main {
 
 .donate-heading,
 .form-heading {
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: bold;
   margin-bottom: 1rem;
 }
@@ -122,10 +124,19 @@ main {
 .confirm-message {
   font-size: 1.25rem;
   cursor: pointer;
+  transition: color 0.2s;
+}
+
+.confirm-message:hover {
+  color: #7e8386;
+}
+
+.confirm-message:active {
+  color: #9ca2a6;
 }
 
 .donate-button {
-  background-color: #5b7e98;
+  background-color: #336021;
   color: white;
   padding: 1rem;
   width: 80%;
@@ -134,14 +145,15 @@ main {
   cursor: pointer;
   border: none;
   border-radius: 2px;
+  transition: background-color 0.2s;
 }
 
 .donate-button:hover {
-  background-color: #55768f;
+  background-color: #40772a;
 }
 
 .donate-button:active {
-  background-color: #506f87;
+  background-color: #4a8931;
 }
 
 .charity-name {
@@ -152,6 +164,20 @@ main {
 }
 
 .donate-quote {
+  font-size: 1.25rem;
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
 }
+
+/* @media (min-width: 400px) {
+  Already a flexbox, changed to column direction
+  main {
+    flex-direction: column;
+  }
+
+  .donate-container {
+    border: 2px solid magenta;
+    width: 100%;
+  }
+  
+} */
