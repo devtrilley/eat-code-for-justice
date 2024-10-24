@@ -8,5 +8,163 @@
   </head>
   <body>
     <script src="script.js"></script>
-  </body>
+  <header>
+    <h1>Take Action!</h1>
+  </header>
+  <style> 
+
+header{
+  margin-top: 50px;
+}
+
+    .box{
+      background-color: green;
+      width: 450px;
+      height: 450px;
+      border: 2px solid black;
+      padding-top: 10px;
+      float: left;
+      margin: 90px;
+      font-size: 2rem;
+      border-radius: 25px;
+      text-align: center;
+      color: #fff
+  }
+  .box p{
+    font-size: 23px;
+    margin-top: 50px;
+  }
+
+  .box2{
+    width: 450px;
+      height: 450px;
+      border: 2px solid black ;
+      padding-top: 10px;
+      float: right;
+      margin: 90px;
+      font-size: 3rem;
+      border-radius: 25px;
+      text-align: center;
+      background-color: green;
+      text-align: center;
+      color: #fff;
+  }
+
+  .box2 p {
+    font-size: 23px;
+    margin: 50px;
+  }
+
+  .container{
+    display: none;
+    flex-direction: column;
+    width: 400px;
+    padding: 15px;
+    border: 1px solid black
+  }
+
+  .button{
+    border-radius: 5px;
+    width: 300px;
+    padding: 10px 15px;
+    margin: 50px;
+    position: relative;
+    bottom: -90px;
+    background: antiquewhite;
+    color: black;
+    text-decoration: none;
+    transition: 0.4s;
+    
+  }
+
+  .button:hover{
+    background-color: orange;
+    color: black;
+  }
+
+  .popup{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    display: none; /* This is how I put the box down by using none/flex */
+    justify-content: center;
+    align-items: center;
+  }
+
+  .popup-content{
+    height: 250px;
+    width: 500px;
+    background: orange;
+    padding: 20px;
+    border-radius: 4px;
+    position: relative;
+    text-align: center;
+  }
+
+  input{
+    margin: 10px;
+    display: block;
+    width: 50%;
+    padding: 8px;
+    border: 2px solid black;
+  }
+
+  .close{
+    position: absolute;
+    top: -15px;
+    right: -16px;
+    background: white;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .button2{
+    border-radius: 5px;
+    width: 300px;
+    padding: 10px 15px;
+    margin: 50px;
+    position: relative;
+    bottom: -90px;
+    background: antiquewhite;
+    color: black;
+    text-decoration: none;
+    transition: 0.4s;
+  }
+
+
+  </style>
+  <div>
+  <div class="box"> <h2>Contact Us!</h2>
+    <p>There are many ways to help, if you would like to get in contact with a salesman please leave your full name and email and we will be in touch</p> 
+  <a href="#" class="button" id="button">Contact Salesman</a>
+  </div>
+  <div class="box2">Our Partners!
+    <p>Here is one of our employee partners that uses hands on work if you would like to help, visit this link</p>
+    <a href="https://www.dilworthsoupkitchen.org/#:~:text=The%20Dilworth%20Soup%20Kitchen%20%26%20Food,year%2C%20regardless%20of%20their%20circumstances." target="_blank" class="button2" id="button2">Help Out!</a>
+  </div>
+  
+  <div class="popup">
+  <div class="popup-content">
+    <img src="https://img.icons8.com/?size=100&id=2i5n7zNvArOt&format=png&color=000000" alt="close" class="close" id="close-btn">
+    <input type="text" placeholder="Full name">
+    <input type="Email" placeholder="Email">
+    <a href="#" class="button">Contact Salesman</a>
+  </div>
+
+  <script>
+document.getElementById("button").addEventListener("click", function(){
+    document.querySelector(".popup").style.display = "flex";
+    document.getElementById("close-btn").addEventListener("click", function(){
+      document.querySelector(".popup").style.display = "none";
+    })
+    })
+
+  </script>
+  
+
+</body>
+</div>
 </html>
