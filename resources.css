@@ -21,11 +21,12 @@
 
   h1{
     font-size:48px;
-    margin-bottom:20px;
+    margin-bottom:1.5rem;
+    margin-top:1.5rem;
   }
 
   .image-container{
-      margin: 20px 0; 
+      margin: 1.5rem 0; 
   }
 
   img{
@@ -120,6 +121,14 @@ li{
 
 a{
   text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+/* pseudo class underline when user waves cursor only target the bottom class */
+
+.clicked:hover {
+    text-decoration:underline;
 }
 
 .background {
