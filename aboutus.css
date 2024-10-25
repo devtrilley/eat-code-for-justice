@@ -3,12 +3,146 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  justify-content: center;
 }
 
+header{
+  width: 100%;
+}
+.navBar {
+  display:flex;
+  overflow: hidden;
+  align-items:center;
+  background-color:#336021;
+  width: 100%;
+  text-align: center; 
+  justify-content:space-between;
+}
+
+.leftSide{
+  padding-right: 15px;
+  display:flex;
+  text-decoration:none;
+  color:white;
+}
+
+.navLogo{
+  width:8rem;
+}
+
+.rightSide{
+  padding:5px;
+  margin: 0 5px;
+  text-decoration:none; 
+  color:white;
+}
+
+.navBar a {
+  color: white;
+  text-align: center;
+  padding:14px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  transition: color 0.2s;
+}
+
+.navBar a:hover {
+  color: black;
+}
+
+.navBar a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.background {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color:#d8d1bd;
+  margin-top:20px;
+  margin-bottom:20px;
+  border-radius: 10px;
+  padding:1rem 3rem;
+  text-align:center;
+}
+
+.background > a{
+      color:black;
+}
+
+button{
+  background-color: #E68C3A;
+  border: none;
+  border-radius:5px;
+  color: white;
+  padding: 15px 32px;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  align-self: center;
+
+}
+
+footer {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    padding:20px;
+    background-color:light grey;
+    color:green;
+    height: 47px;
+    width:100%;
+    padding-bottom: 1rem;
+  }
+
+  ooter p{
+    margin: auto;
+  }
+
+@media (max-width:320px){}
+@media (min-width:321px) and (max-width:768){}
+@media(min-width:769px){}
+
+
+h1{
+font-size: 50px;
+font-weight: 700;
+text-align: center;
+}
+
+h2{
+font-size:25px;
+}
+
+h3{
+font-size:25px;
+/* padding:10px; */
+}
+
+h4{
+font-size:25px;
+padding:10px;
+}
+
+li{
+list-style-type: none;
+}
+
+a{
+text-decoration: none;
+color: black;
+cursor: pointer;
+}
+
+/* pseudo class underline when user waves cursor only target the bottom class */
+
+.clicked:hover {
+  text-decoration:underline;
+}
 
 body{
   display:flex;
+  font-family: Arial, Helvetica, sans-serif;
   flex-direction: column;
   align-items: center;
 }
@@ -51,9 +185,13 @@ color: #336021;
 #aboutus{
   padding-top:30px;
   display:flex;
+  flex-direction: row;
   align-items: center;
+  justify-content: center;
   margin: 20px;
-  
+  width: 100%;
+  height: 500px !important;
+  overflow: scroll;
 }
 
 .aboutpic{
@@ -63,12 +201,13 @@ color: #336021;
   flex-direction: column;
   align-items: center;
   text-align: start;
-  width: 275px;
-  height: 500px;
+  width: 275px !important;
+  height: 500px !important;
   transition: all .25s;
   filter: drop-shadow(0 0 0.4rem rgba(0, 0, 0, 0.405));
   justify-content: center;
 }
+
 
 #nate_pic {
   background: url(aboutusimages/NS.jpg) no-repeat;
@@ -98,7 +237,6 @@ color: #336021;
 .aboutpic:hover {
   transition: all .75s;
   transform: scale(1.030);
-  /* box-shadow: inset 0 0 0 2000px rgba(0, 79, 88, 0.672); */
   box-shadow: inset 0 0 0 2000px #3360219a;
   filter: drop-shadow(0 0 1rem rgb(0, 0, 0));
 }
@@ -130,3 +268,65 @@ color: #336021;
   padding:20px;
 }
 
+footer {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  padding:20px;
+  background-color:light grey;
+  color:green;
+  height: 47px;
+  width:100%;
+  padding-bottom: 1rem;
+}
+
+footer p{
+  margin: auto;
+}
+
+/* For my responsive design I decided to add overflow instead of the breakpoint since it would work the same */
+/* @media (max-width:320px){
+}
+@media (min-width:321px) and (max-width:768){
+
+} */
+@media(max-width:769px){
+  .aboutcard{
+    background-color: transparent;
+    perspective: 1000px;
+  }
+  
+  .aboutpic{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .aboutcard:hover .aboutpic{
+    transform: rotateY(180deg);
+  }
+  
+  .backcard {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+  }
+  
+  .aboutpic:hover {
+    box-shadow: inset 0 0 0 2000px #336021d6;
+    transition: all .25s;
+  }
+  
+  .aboutpic:hover p, a {
+    transform: rotateY(180deg);
+  }
+}
+
+@media(max-width:1440px) {
+  #aboutus {
+    justify-content: start;
+  }
+}
