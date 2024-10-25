@@ -31,6 +31,16 @@ footer{
     text-align: center;
   }
 
+  .highlightOrange a:hover{
+    color:#e68c3a;
+    
+  }
+
+  .highlightOrange a{
+    color:white;
+    text-decoration: none;
+  }
+
 
   /* Responsive styles for phone breakpoint */
 
