@@ -23,9 +23,5 @@ main {
   border: 1px solid magenta;
 }
 
-header,
-footer {
-  display: flex;
-  background-color: rgb(156, 156, 230);
-  border: 1px solid magenta;
-}
+
+
