@@ -2,6 +2,7 @@
 main {
   gap: 1%;
   align-items: stretch;
+  margin-bottom: 6rem;
 }
 
 .donate-container {
@@ -165,7 +166,7 @@ main {
 
 .donate-quote {
   font-size: 1.25rem;
-  margin-top: 0.75rem;
+  margin-top: 2rem;
   margin-bottom: 0.75rem;
 }
 
