@@ -89,22 +89,6 @@ button{
 
 }
 
-footer {
-    margin-top: auto;
-    display: flex;
-    align-items: center;
-    padding:20px;
-    background-color:light grey;
-    color:green;
-    height: 47px;
-    width:100%;
-    padding-bottom: 1rem;
-  }
-
-  ooter p{
-    margin: auto;
-  }
-
 
 
 h1{
@@ -271,8 +255,8 @@ color: #336021;
   padding:20px;
 }
 
-
-footer{
+ /* Styling for the footer */
+  footer{
   margin-top: auto;
   display: flex;
   align-items: center;
@@ -301,6 +285,8 @@ footer p{
   text-decoration: none;
 }
 
+
+
 /* For my responsive design I decided to add overflow instead of the breakpoint since it would work the same */
 /* @media (max-width:320px){
 }
@@ -318,25 +304,25 @@ footer p{
     padding:10px; 
   }
 }
-@media(max-width:768px){
+@media (max-width: 768px) {
   .rightSide {
-    display: none; /* Hide links*/
-    flex-direction: column; /* Stack links vertically */
-    position: absolute;
-    top: 60px; 
-    left: 0;
-    width: 100%;
-    background-color: #336021;
-    z-index: 1000;
-}
+      display: none; /* Hide links*/
+      flex-direction: column; /* Stack links vertically */
+      position: absolute;
+      top: 60px; 
+      left: 0;
+      width: 100%;
+      background-color: #336021;
+      z-index: 1000;
+  }
 
-.menu-toggle:checked + .menu-icon + .rightSide {
-    display: flex;
-}
+  .menu-toggle:checked + .menu-icon + .rightSide {
+      display: flex;
+  }
 
-.menu-icon {
-    display: block;
-}
+  .menu-icon {
+      display: block;
+  }
 
   .aboutcard{
     background-color: transparent;
