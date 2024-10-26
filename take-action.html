@@ -4,21 +4,35 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EAT: Resources</title>
-    <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="take-action.css">
   </head>
   <body>
     <script src="script.js"></script>
   <header>
-    <header>
-    </header>
+      <!-- Navigation Bar -->
+      <nav>
+      <div class="navBar">
+        <div class = "leftSide">
+      <img class ="navLogo" src="eat-logo.png" alt="EAT Logo"/>
+      </div>
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+      <label for="menu-toggle" class="menu-icon">☰</label>
+        <div class = "rightSide">
+        <a href="index.html">Home</a>
+        <a href="about-us.html">About Us</a>
+        <a href="take-action.html">Take Action</a>
+        <a href="resources.html">Resources</a>
+        <a href="donate.html">Donate</a>
+        </div>
+      </div>
+    </nav>
   </header>
 
 <section class="box-container">
   <div class="box"> 
     <h2>Contact Us!</h2>
-    <p>There are many ways to help, if you would like to get in contact with a salesman please leave your full name and email and we will be in touch</p> 
-  <a href="#" class="button" id="button">Contact Salesman</a>
+    <p>There are many ways to help, if you would like to get in contact with a employee please fill out the form below</p> 
+  <a href="#" class="button" id="button">Contact Us!</a>
   </div>
 
   <div class="box2">
@@ -27,30 +41,31 @@
     <a href="https://www.dilworthsoupkitchen.org/#:~:text=The%20Dilworth%20Soup%20Kitchen%20%26%20Food,year%2C%20regardless%20of%20their%20circumstances." target="_blank" class="button2" id="button2">Help Out!</a>
   </div>
 </section>
-  <div class="popup">
-  <form class = "popup-content">
-    <img src="https://img.icons8.com/?size=100&id=2i5n7zNvArOt&format=png&color=000000" alt="close" class="close" id="close-btn">
-    <input type="text" placeholder="First name">
-    <input type="text" placeholder="Last name">
-    <input type="Email" placeholder="Email">
-    <a href="#" class="button">Contact Salesmen</a>
-  </form>
 
-
-
-
-  <script>
-document.getElementById("button").addEventListener("click", function(){
-    document.querySelector(".popup").style.display = "flex";
-    document.getElementById("close-btn").addEventListener("click", function(){
-      document.querySelector(".popup").style.display = "none";
-    })
-    })
-
-  </script>
+<form action="submit_form.php" method="POST">
+  <label for="first-name">First Name:</label>
+  <input type="text" id="first-name" name="first_name" placeholder="First name" required>
   
+  <label for="last-name">Last Name:</label>
+  <input type="text" id="last-name" name="last_name" placeholder="Last name" required>
+  
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" placeholder="Email" required>
+  
+  <button type="submit" class="form button">Submit!</button>
+</form>
+
+
+  <footer>
+    <!-- Footer Text -->
+    <p>&copy; 2024 EAT, Inc. All Rights Reserved</p>
+    <p>"No mouth left unfed"</p>
+    <p class="highlightOrange"><a href="donate.html">Donate - Offer Relief</a></p>
+    <p>E.A.T: Everybody at The Table</p>
+  </footer>
 
 
 </body>
-</div>
+
+<script src="script.js"></script>
 </html>
