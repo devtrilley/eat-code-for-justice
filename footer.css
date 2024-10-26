@@ -8,22 +8,72 @@
 body{
   font-family: Arial, Helvetica, sans-serif; 
  }
+
+ /* Styling for the footer */
 footer{
     margin-top: auto;
     display: flex;
     align-items: center;
     padding:20px;
-    background-color:light grey;
-    color:green;
-    height: 47px;
+    background-color:#336021;
+    color:white;
+    height: 60px;
     width:100%;
     padding-bottom: 1rem;
   }
 
+
+
+  /* Center text in footer paragraph */
+
   footer p{
     margin: auto;
+    text-align: center;
   }
 
-@media (max-width:320px){}
-@media (min-width:321px) and (max-width:768){}
-@media(min-width:769px){}
+  .highlightOrange a:hover{
+    color:#e68c3a;
+    
+  }
+
+  .highlightOrange a{
+    color:white;
+    text-decoration: none;
+  }
+
+
+  /* Responsive styles for phone breakpoint */
+
+@media (max-width:320px){
+  body{
+    font-size:14px; 
+  }
+
+  footer{
+    flex-direction:column;
+    height:auto;
+    padding:10px; 
+  }
+}
+/* Responsive syles for tablet breakpoint*/
+@media (min-width:321px) and (max-width:768px){
+  body {
+    font-size: 16px;
+  }
+
+  footer {
+    height: 50px;
+    padding: 15px; 
+  }
+}
+/* Responsive styles for desktop breakpoint */
+@media(min-width:769px){
+  body {
+    font-size: 18px;
+  }
+
+  footer {
+    height: 60px;
+    padding: 20px;
+  }
+}
