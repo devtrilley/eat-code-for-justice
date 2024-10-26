@@ -49,9 +49,15 @@ header{
   color: black;
 }
 
-.navBar a.active {
-  background-color: #04AA6D;
-  color: white;
+.menu-toggle {
+  display: none; 
+}
+
+.menu-icon {
+  display: none;
+  font-size: 2rem; 
+  cursor: pointer;
+  color:white;
 }
 
 .background {
@@ -99,9 +105,6 @@ footer {
     margin: auto;
   }
 
-@media (max-width:320px){}
-@media (min-width:321px) and (max-width:768){}
-@media(min-width:769px){}
 
 
 h1{
@@ -268,20 +271,34 @@ color: #336021;
   padding:20px;
 }
 
-footer {
+
+footer{
   margin-top: auto;
   display: flex;
   align-items: center;
   padding:20px;
-  background-color:light grey;
-  color:green;
-  height: 47px;
+  background-color:#336021;
+  color:white;
+  height: 60px;
   width:100%;
   padding-bottom: 1rem;
 }
 
+/* Center text in footer paragraph */
+
 footer p{
   margin: auto;
+  text-align: center;
+}
+
+.highlightOrange a:hover{
+  color:#e68c3a;
+  
+}
+
+.highlightOrange a{
+  color:white;
+  text-decoration: none;
 }
 
 /* For my responsive design I decided to add overflow instead of the breakpoint since it would work the same */
@@ -290,7 +307,37 @@ footer p{
 @media (min-width:321px) and (max-width:768){
 
 } */
-@media(max-width:769px){
+@media (max-width:320px){
+  body{
+    font-size:14px; 
+  }
+
+  footer{
+    flex-direction:column;
+    height:auto;
+    padding:10px; 
+  }
+}
+@media(max-width:768px){
+  .rightSide {
+    display: none; /* Hide links*/
+    flex-direction: column; /* Stack links vertically */
+    position: absolute;
+    top: 60px; 
+    left: 0;
+    width: 100%;
+    background-color: #336021;
+    z-index: 1000;
+}
+
+.menu-toggle:checked + .menu-icon + .rightSide {
+    display: flex;
+}
+
+.menu-icon {
+    display: block;
+}
+
   .aboutcard{
     background-color: transparent;
     perspective: 1000px;
@@ -323,10 +370,21 @@ footer p{
   .aboutpic:hover p, a {
     transform: rotateY(180deg);
   }
+
+  footer {
+    height: 50px;
+    padding: 15px; 
+  }
+
 }
 
 @media(max-width:1440px) {
   #aboutus {
     justify-content: start;
+  }
+  
+  footer {
+    height: 60px;
+    padding: 20px;
   }
 }
