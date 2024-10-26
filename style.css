@@ -12,10 +12,11 @@ body {
   flex-direction: column;
   align-items: center;
   background-color: whitesmoke;
-  border: 3px solid red;
+  /* border: 1px solid red; */
   font-family: Arial, Helvetica, sans-serif;
-  padding: 5rem 6rem;
+  padding: 2rem 6rem 1.5rem 6rem;
   color: #666a6d;
+  margin-top: 8rem;
 }
 
 main {
@@ -26,12 +27,6 @@ main {
   width: 100%;
 }
 
-header,
-footer {
-  display: flex;
-  background-color: rgb(156, 156, 230);
-  /* border: 1px solid magenta; */
-}
 
 header {
   position: absolute;
@@ -40,12 +35,6 @@ header {
   right: 0;
 }
 
-footer {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  right: 0;
-}
 
 /* Add this class to italicize text */
 .italics {
