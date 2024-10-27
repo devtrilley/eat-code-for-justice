@@ -26,49 +26,35 @@ form.addEventListener("submit", (e) => {
   if (firstNameInput.value === "" || firstNameInput.value === null) {
     e.preventDefault();
     fnameError.innerHTML = "&#129365; Error: First Name is required";
-  } else {
-    fnameError.innerHTML = "";
-  }
-
-  if (firstNameInput.value.length < 2) {
+  } else if (firstNameInput.value.length < 2) {
     e.preventDefault();
     fnameError.innerHTML =
       "&#129365; Error: First name requires at least 2 characters";
+  } else if (firstNameInput.value.length > 20) {
+    e.preventDefault();
+    fnameError.innerHTML =
+      "&#129365; Error: First name has a max of 20 characters";
   } else {
     fnameError.innerHTML = "";
   }
 
-  // if (firstNameInput.value.length > 20) {
-  //   e.preventDefault();
-  //   fnameError.innerHTML =
-  //     "&#129365; Error: First name has a max of 20 characters";
-  // } else {
-  //   fnameError.innerHTML = "";
-  // }
-
+  // Validating Last Name
   if (lastNameInput.value === "" || lastNameInput.value === null) {
     e.preventDefault();
     lnameError.innerHTML = "&#129365; Error: Last Name is required";
-  } else {
-    lnameError.innerHTML = "";
-  }
-
-  if (lastNameInput.value.length < 2) {
+  } else if (lastNameInput.value.length < 2) {
     e.preventDefault();
     lnameError.innerHTML =
       "&#129365; Error: Last name requires at least 2 characters";
+  } else if (lastNameInput.value.length > 20) {
+    e.preventDefault();
+    lnameError.innerHTML =
+      "&#129365; Error: Last name has a max of 20 characters.";
   } else {
     lnameError.innerHTML = "";
   }
 
-  // if (lastNameInput.value.length > 20) {
-  //   e.preventDefault();
-  //   lnameError.innerHTML =
-  //     "&#129365; Error: Last name has a max of 20 characters.";
-  // } else {
-  //   lnameError.innerHTML = "";
-  // }
-
+  // Validating Email
   if (!emailInput.value.match(emailRegex)) {
     e.preventDefault();
     emailError.innerHTML = "&#129365; Error: Valid email is required";
@@ -76,6 +62,7 @@ form.addEventListener("submit", (e) => {
     emailError.innerHTML = "";
   }
 
+  // Validating Phone Number
   if (!telephoneInput.value.match(teleRegex)) {
     e.preventDefault();
     teleError.innerHTML =
