@@ -1,4 +1,9 @@
 /* Main on my donate page to override anything in general css stylings */
+/* Removes body padding so footer works */
+body {
+  padding: 0;
+}
+
 main {
   gap: 1%;
   align-items: stretch;
@@ -213,3 +218,4 @@ main {
     margin-top: 2rem;
   }
 }
+

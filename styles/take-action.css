@@ -1,9 +1,14 @@
+body {
+  padding: 0;
+}
 /* Slight Main Stylings */
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
+  /* border: 3px solid magenta; */
+  padding: 2rem 6rem 1.5rem 6rem;
 }
 
 /* Reusuable row styling for sections */
@@ -145,10 +150,10 @@ main {
 /* Button element inside of link */
 .link-button {
   width: 100%;
-  padding-top: 2.75rem;
-  padding-bottom: 2.75rem;
+  padding-top: 2.25rem;
+  padding-bottom: 2.25rem;
   border: none;
-  background-color: orange;
+  background-color: #e68c3a;
   color: white;
   cursor: pointer;
   font-size: 1.5rem;
@@ -202,7 +207,6 @@ main {
   background-color: #4f6dae;
 }
 
-
 /* Form Stylings */
 
 /* Final section of this page */
@@ -211,6 +215,7 @@ main {
   flex-direction: column;
   align-items: center;
   width: 100%;
+  /* border: 1px solid red; */
 }
 
 .form-heading {
@@ -219,41 +224,83 @@ main {
 
 /* Form itself */
 .contact-form {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  border: none;
-  width: 75%;
-  row-gap: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #336021;
-  border: none;
-  border-radius: 2rem;
-  padding: 2rem;
-  box-shadow: 0px 0px 10px rgb(150, 150, 150);
+  width: 70%;
+  color: white;
+  border-radius: 1.5rem;
+  padding: 2.5rem 0rem;
+  margin-top: 2rem;
 }
 
-/* Four of the top inputs */
-.form-input {
-  width: 90%;
-  border: 1px solid #3c3c3c;
-  border-radius: 1rem;
-  padding: 1rem;
-  font-size: 1.25rem;
-  justify-self: center;
-}
-
-/* Container for the checkboxes and it's labels */
-.checkbox-container {
-  grid-column: span 2;
+.input-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 3%;
+  width: 100%;
+  gap: 2%;
+  margin-bottom: 1rem;
 }
 
-/* textarea */
-.comments {
-  grid-column: span 2;
-  height: 200px;
+.input-styling {
+  width: 40%;
+  padding: 1rem;
+  font-size: 1.25rem;
+  border: 1px solid rgb(180, 180, 180);
+  border-radius: 1rem;
+}
+
+.radio-container {
+  display: flex;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+input[type="radio"] {
+  cursor: pointer;
+}
+
+.radio-label {
+  font-size: 1.5rem;
+  padding-left: 3%;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.radio-label:hover {
+  color: rgb(221, 221, 221);
+}
+
+.radio-label:active {
+  color: rgb(178, 178, 178);
+}
+
+.extra-comments {
+  width: 80%;
+  min-width: 60%;
+  max-width: 80%;
+  min-height: 140px;
+  max-height: 300px;
+}
+
+.submit-button {
+  color: white;
+  background-color: #e68c3a;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 10px #224016;
+}
+.submit-button:hover {
+  background-color: #f3953d;
+}
+.submit-button:active {
+  background-color: #ff9d41;
 }
 
 /* Hides labels on Form */

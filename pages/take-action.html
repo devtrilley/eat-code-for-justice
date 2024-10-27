@@ -115,78 +115,97 @@
 
       <section class="columned-row">
         <h2 class="form-heading">Contact Our Team</h2>
+
         <form class="contact-form">
-          <label class="hide" for="first-name">Hi</label>
-          <input
-            class="form-input"
-            id="first-name"
-            type="text"
-            placeholder="First Name"
-          />
-          <label class="hide" for="last-name">Hi</label>
-          <input
-            class="form-input"
-            id="last-name"
-            type="text"
-            placeholder="Last Name"
-          />
-          <label class="hide" for="form-email">Hi</label>
-          <input
-            class="form-input"
-            id="form-email"
-            type="text"
-            placeholder="Email"
-          />
-          <label class="hide" for="form-tele">Hi</label>
-          <input
-            class="form-input"
-            id="form-tele"
-            type="text"
-            placeholder="Phone Number"
-          />
-          <div class="checkbox-container">
-            <label for="volunteer" class="reasons">
+          <div class="input-container">
+            <label for="first-name" class="hide"></label>
+            <input
+              class="input-styling"
+              type="text"
+              id="first-name"
+              placeholder="First Name"
+            />
+            <label for="last-name" class="hide"></label>
+            <input
+              class="input-styling"
+              type="text"
+              id="last-name"
+              placeholder="Last Name"
+            />
+          </div>
+
+          <div class="input-container">
+            <label for="email" class="hide"></label>
+            <input
+              class="input-styling"
+              type="text"
+              id="email"
+              placeholder="Email"
+            />
+            <label for="telephone" class="hide"></label>
+            <input
+              class="input-styling"
+              type="text"
+              id="telephone"
+              placeholder="Telephone"
+            />
+          </div>
+
+          <div class="input-container">
+            <div class="radio-container">
               <input
-                type="checkbox"
-                name="reason"
-                value="volunteer"
+                class="input-styling"
+                type="radio"
+                name="contact-reason"
                 id="volunteer"
               />
-              Volunteer
-            </label>
+              <label class="radio-label" for="volunteer">Volunteering</label>
+            </div>
 
-            <label for="partner" class="reasons">
+            <div class="radio-container">
               <input
-                type="checkbox"
-                name="reason"
-                value="partner"
-                id="partner"
+                class="input-styling"
+                type="radio"
+                name="contact-reason"
+                id="partnering"
               />
-              Potential Partner
-            </label>
+              <label class="radio-label" for="partnering">Partnering</label>
+            </div>
 
-            <label for="assistance" class="reasons">
+            <div class="radio-container">
               <input
-                type="checkbox"
-                name="reason"
-                value="assistance"
-                id="assistance"
+                class="input-styling"
+                type="radio"
+                name="contact-reason"
+                id="suggestion"
               />
-              Assistance
-            </label>
+              <label class="radio-label" for="suggestion">Suggestions</label>
+            </div>
 
-            <label for="other" class="reasons">
-              <input type="checkbox" name="reason" value="other" id="other" />
-              Other
-            </label>
+            <div class="radio-container">
+              <input
+                class="input-styling"
+                type="radio"
+                name="contact-reason"
+                id="other"
+              />
+              <label class="radio-label" for="other">Other</label>
+            </div>
           </div>
-          <textarea
-            class="comments"
-            name="reason"
-            id=""
-            cols="30"
-            placeholder="Enter additional comments"
-          ></textarea>
+
+          <div class="input-container">
+            <label for="extra-comments hide"></label>
+            <textarea
+              class="input-styling extra-comments"
+              name="extra-comments"
+              id="extra-comments"
+              placeholder="Enter additional comments"
+            ></textarea>
+          </div>
+
+          <div class="input-container">
+            <input class="submit-button" type="submit" value="Submit">
+          </div>
         </form>
       </section>
     </main>
