@@ -1,342 +1,262 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-
- body{
-  font-family: Arial, Helvetica, sans-serif; 
-  background-color: antiquewhite;
- }
-  /* Navigation Bar Styling */
-  .navBar {
-    display:flex;
-    align-items:center;
-    background-color:#336021;
-    width:100%;
-    text-align: center; 
-    justify-content:space-between;
-  }
-  .leftSide{
-    padding-right: 15px;
-    display:flex;
-  }
-
-  .navLogo{
-    width:8rem;
-  }
-
-  .rightSide{
-    display: flex;
-    margin: 0 5px;
-  } 
-  .navBar a {
-    color: white;
-    padding:14px 16px;
-    text-decoration: none;
-    font-size: 1.25rem;
-    transition: color 0.2s;
-  }
-  .navBar a:hover {
-    color: black;
-  }
-
-  .menu-toggle {
-    display: none; 
-}
-
-.menu-icon {
-    display: none;
-    font-size: 2rem; 
-    cursor: pointer;
-    color:white;
-}
-
-
-.box-container{
-    display: flex;
-    justify-content: center;
-    gap: 2%;;
-    border: 2px solid transparent;
-    width: 100%;
-    margin-top: 20px;
-}
-
-.box{
-    background-color: #336021;
-    width: 450px;
-    height: 450px;
-    border: 2px solid black;
-    padding-top: 10px;
-    float: left;
-    font-size: 2rem;
-    border-radius: 25px;
-    text-align: center;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-.box p{
-    font-size: 20px;
-    margin-top: 50px;
-}
-
-.box2{
-    width: 450px;
-    height: 450px;
-    border: 2px solid black ;
-    padding-top: 10px;
-    float: right;
-    font-size: 2.9rem;
-    border-radius: 25px;
-    background-color: #336021;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-}
-
-.box2 p {
-    font-size: 20px;
-    margin-top: 60px;
-}
-
-h4{
-    margin-bottom: -20px;
-}
-
-.container{
-    display: none;
-    flex-direction: column;
-    width: 400px;
-    padding: 15px;
-    border: 1px solid black;
-}
-
-.button{
-    border-radius: 5px;
-    width: 300px;
-    padding: 10px 15px;
-    margin: 50px;
-    position: relative;
-    bottom: -1rem;
-    background: antiquewhite;
-    color: black;
-    text-decoration: none;
-    transition: 0.4s;
-}
-
-.button:hover{
-    background-color: orange;
-    color: black;
-}
-#button2 {
-    margin-top: 37px;
-}
-
-form {
-    max-width: 600px; 
-    margin: 0 auto; /* Center the form */
-    padding: 20px;
-    border: 1px solid #ccc; /* Optional border */
-    border-radius: 8px;
-    background-color: #f9f9f9;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 15px;
-    background-color: #336021;
-}
-
-/* Label styling */
-form label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 8px;
-    color: white;
-}
-
-/* Input field styling */
-form input[type="text"],
-form input[type="email"] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    font-size: 16px;
-    color: black;
-}
-
-/* Button styling */
-form button {
-    width: 100%;
-    padding: 12px;
-    background-color: #4CAF50; /* Adjust color as needed */
-    color: #fff;
-    font-size: 16px;
-    font-weight: bold;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: 0.3s ease;
-    margin: 0 auto;
-}
-
-/* Button hover effect */
-form button:hover {
-    background-color: #45a049; 
-}
-
-/* .popup{
+/* Slight Main Stylings */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0%;
-  display: none; /* This is how I put the box down by using none/flex 
+}
+
+/* Reusuable row styling for sections */
+.row {
+  display: flex;
+  width: 100%;
   justify-content: center;
-  align-items: center; 
-} 
-
-.popup-content{
-  height: 250px;
-  width: 500px;
-  background: orange;
-  padding: 20px;
-  border-radius: 4px;
-  position: relative;
-  text-align: center;
-  margin: 10px;
-} */
-
-input{
-    margin: 8px;
-    display: block;
-    width: 50%;
-    padding: 8px;
-    border: 2px solid black;
+  align-items: stretch;
+  margin-bottom: 10%;
 }
 
+/* left side of .row */
+.heading-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+}
 
-.button2{
-  border-radius: 5px;
-  width: 300px;
-  padding: 10px 15px;
-  margin: 50px;
-  position: relative;
-  bottom: -90px;
-  background: antiquewhite;
+/* Heading Stylings for .row */
+.section-heading {
+  font-size: 9rem;
+}
+
+.section-subheading {
+  font-size: 4rem;
+}
+
+/* Container for social media icons */
+.socials-container {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  /* border: 1px solid orange; */
+}
+
+.social-row {
+  display: flex;
+  /* border: 1px solid blue; */
+  justify-content: center;
+  gap: 5%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+/* Circle background for social media icons */
+.icon-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(74, 74, 74);
+  border-radius: 50%;
+  width: 8rem;
+  aspect-ratio: 1;
+  box-shadow: 0px 0px 10px rgb(150, 150, 150);
+  transition: scale 0.2s;
+}
+
+.icon-circle:hover {
+  scale: 1.25;
+}
+
+/* Social Media Icons & their circles */
+/* Space Between styling middle section */
+.middle-row {
+  justify-content: space-between;
+}
+
+.icon {
+  font-size: 5rem;
+}
+
+.twitter {
+  color: white;
+}
+
+.twitter-circle {
+  background-color: black;
+}
+
+.insta {
+  color: white;
+}
+
+/* Gradient image taken from internet for more accurate feel */
+.insta-circle {
+  background: url(https://preview.colorkit.co/gradient/f9ce34-ee2a7b-6228d7.png?size=wallpaper&scale=0.25&static=true);
+  background-position: center;
+}
+
+.snap {
   color: black;
+}
+
+.snap-circle {
+  background-color: #fefc1e;
+}
+
+.youtube {
+  color: #ff1412;
+}
+
+.youtube-circle {
+  background-color: white;
+}
+
+.tiktok {
+  color: white;
+}
+
+.tiktok-circle {
+  background-color: black;
+}
+
+.facebook {
+  color: white;
+}
+
+.facebook-circle {
+  background-color: #0665ff;
+}
+
+/* Button container for middle section */
+.button-container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 0.5rem;
+}
+
+/* Anchor element holding the button link */
+.link {
   text-decoration: none;
-  transition: 0.4s;
+}
+
+/* Button element inside of link */
+.link-button {
+  width: 100%;
+  padding-top: 2.75rem;
+  padding-bottom: 2.75rem;
+  border: none;
+  background-color: orange;
+  color: white;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 6rem;
+  box-shadow: 0px 0px 10px rgb(188, 188, 188);
+}
+
+/* Stylings for each charity links button */
+.dilworth,
+.harvest,
+.hope-street,
+.nourish-up {
+  transition: background-color 0.4s, border-radius 0.4s;
+  width: 100%;
+}
+
+.dilworth:hover {
+  background-color: #084421;
+  border-radius: 0.5rem;
+}
+
+.dilworth:active {
+  background-color: #0c6532;
+}
+
+.harvest:hover {
+  background-color: #e41c22;
+  border-radius: 0.5rem;
+}
+
+.harvest:active {
+  background-color: #ff353c;
+}
+
+.hope-street:hover {
+  background-color: #3b2433;
+  border-radius: 0.5rem;
+}
+
+.hope-street:active {
+  background-color: #6c425d;
+}
+
+.nourish-up:hover {
+  background-color: #3d5588;
+  border-radius: 0.5rem;
+}
+
+.nourish-up:active {
+  background-color: #4f6dae;
 }
 
 
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
+/* Form Stylings */
 
-body{
-  font-family: Arial, Helvetica, sans-serif; 
- }
-
- /* Styling for the footer */
-footer{
-    margin-top: auto;
-    display: flex;
-    align-items: center;
-    padding:20px;
-    background-color:#336021;
-    color:white;
-    height: 60px;
-    width:100%;
-    padding-bottom: 1rem;
-  }
-
-
-
-  /* Center text in footer paragraph */
-
-  footer p{
-    margin: auto;
-    text-align: center;
-  }
-
-  .highlightOrange a:hover{
-    color:#e68c3a;
-    
-  }
-
-  .highlightOrange a{
-    color:white;
-    text-decoration: none;
-  }
-
-@media (max-width: 900px){
-    .box-container{
-        flex-direction: column;
-    }
-    .box2{
-        margin-top: 20px;
-    }
+/* Final section of this page */
+.columned-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 
-@media (max-width: 768px) {
-    .rightSide {
-        display: none; /* Hide links*/
-        flex-direction: column; /* Stack links vertically */
-        position: absolute;
-        top: 60px; 
-        left: 0;
-        width: 100%;
-        background-color: #336021;
-        z-index: 1000;
-    }
-  
-    .menu-toggle:checked + .menu-icon + .rightSide {
-        display: flex;
-    }
-  
-    .menu-icon {
-        display: block;
-    }
-  }
+.form-heading {
+  font-size: 6rem;
+}
 
-  @media (max-width:320px){
-    body{
-      font-size:14px; 
-    }
-  
-    footer{
-      flex-direction:column;
-      height:auto;
-      padding:10px; 
-    }
-  }
-  /* Responsive syles for tablet breakpoint*/
-  @media (min-width:321px) and (max-width:768px){
-    body {
-      font-size: 16px;
-    }
-  
-    footer {
-      height: 50px;
-      padding: 15px; 
-    }
-  }
-  /* Responsive styles for desktop breakpoint */
-  @media(min-width:769px){
-    body {
-      font-size: 18px;
-    }
-  
-    footer {
-      height: 60px;
-      padding: 20px;
-    }
-  }
+/* Form itself */
+.contact-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: none;
+  width: 75%;
+  row-gap: 10%;
+  background-color: #336021;
+  border: none;
+  border-radius: 2rem;
+  padding: 2rem;
+  box-shadow: 0px 0px 10px rgb(150, 150, 150);
+}
+
+/* Four of the top inputs */
+.form-input {
+  width: 90%;
+  border: 1px solid #3c3c3c;
+  border-radius: 1rem;
+  padding: 1rem;
+  font-size: 1.25rem;
+  justify-self: center;
+}
+
+/* Container for the checkboxes and it's labels */
+.checkbox-container {
+  grid-column: span 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3%;
+}
+
+/* textarea */
+.comments {
+  grid-column: span 2;
+  height: 200px;
+}
+
+/* Hides labels on Form */
+.hide {
+  display: none;
+}

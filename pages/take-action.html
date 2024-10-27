@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EAT: Take Action</title>
+    <link rel="stylesheet" href="../styles/style.css" />
     <link rel="stylesheet" href="../styles/take-action.css" />
+    <link rel="stylesheet" href="../styles/navBar.css" />
+    <link rel="stylesheet" href="../styles/footer.css" />
   </head>
   <body>
     <script src="script.js"></script>
@@ -28,62 +31,165 @@
       </nav>
     </header>
 
-    <section class="box-container">
-      <div class="box">
-        <h2>Contact Us!</h2>
-        <p>
-          There are many ways to help, if you would like to get in contact with
-          a employee please fill out the form below
-        </p>
-        <a href="#" class="button" id="button">Contact Us!</a>
-      </div>
+    <main>
+      <section class="row">
+        <div class="heading-container">
+          <h2 class="section-heading">Keep Us With Us</h2>
+          <h3 class="section-subheading">Follow our socials</h3>
+        </div>
+        <div class="socials-container">
+          <div class="social-row">
+            <a class="link" href="https://x.com/?lang=en">
+              <div class="icon-circle twitter-circle" title="Twitter">
+                <i class="fa-brands fa-x-twitter twitter icon"></i>
+              </div>
+            </a>
 
-      <div class="box2">
-        <h4>Our Partners!</h4>
-        <p>
-          Here is one of our employee partners that uses hands on work if you
-          would like to help, visit this link
-        </p>
-        <a
-          href="https://www.dilworthsoupkitchen.org/#:~:text=The%20Dilworth%20Soup%20Kitchen%20%26%20Food,year%2C%20regardless%20of%20their%20circumstances."
-          target="_blank"
-          class="button2"
-          id="button2"
-          >Help Out!</a
-        >
-      </div>
-    </section>
+            <a class="link" href="https://www.instagram.com/?hl=en">
+              <div class="icon-circle insta-circle" title="Instagram">
+                <i class="fa-brands fa-instagram insta icon"></i>
+              </div>
+            </a>
 
-    <form action="submit_form.php" method="POST">
-      <label for="first-name">First Name:</label>
-      <input
-        type="text"
-        id="first-name"
-        name="first_name"
-        placeholder="First name"
-        required
-      />
+            <a class="link" href="https://www.snapchat.com/">
+              <div class="icon-circle snap-circle" title="Snapchat">
+                <i class="fa-brands fa-snapchat snap icon"></i>
+              </div>
+            </a>
+          </div>
 
-      <label for="last-name">Last Name:</label>
-      <input
-        type="text"
-        id="last-name"
-        name="last_name"
-        placeholder="Last name"
-        required
-      />
+          <div class="social-row">
+            <a class="link" href="https://www.youtube.com/?themeRefresh=1">
+              <div class="icon-circle youtube-circle" title="YouTube">
+                <i class="fa-brands fa-youtube youtube icon"></i>
+              </div>
+            </a>
 
-      <label for="email">Email:</label>
-      <input
-        type="email"
-        id="email"
-        name="email"
-        placeholder="Email"
-        required
-      />
+            <a class="link" href="https://www.tiktok.com/en/">
+              <div class="icon-circle tiktok-circle" title="TikTok">
+                <i class="fa-brands fa-tiktok tiktok icon"></i>
+              </div>
+            </a>
 
-      <button type="submit" class="form button">Submit!</button>
-    </form>
+            <a class="link" href="https://www.facebook.com/">
+              <div class="icon-circle facebook-circle" title="Facebook">
+                <i class="fa-brands fa-facebook-f facebook icon"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="row middle-row">
+        <div class="heading-container">
+          <h2 class="section-heading">Our Partners</h2>
+          <h3 class="section-subheading">Links to our pals</h3>
+        </div>
+        <div class="button-container">
+          <a
+            class="link"
+            href="https://www.dilworthsoupkitchen.org/#:~:text=The%20Dilworth%20Soup%20Kitchen%20%26%20Food,year%2C%20regardless%20of%20their%20circumstances."
+          >
+            <button class="link-button dilworth">Dilworth Soup Kitchen</button>
+          </a>
+          <a
+            class="link"
+            href="https://www.secondharvestmetrolina.org/?gad_source=1&gclid=Cj0KCQjwpvK4BhDUARIsADHt9sSNQMdggP_XBaBI4A5WaZJBSmMTYgLlro4iSU67ZUoXzt6GKdyqR3gaArSSEALw_wcB"
+          >
+            <button class="link-button harvest">
+              Second Harvest Metrolina
+            </button>
+          </a>
+          <a class="link" href="https://hopestreetfoodpantry.com/">
+            <button class="link-button hope-street">
+              Hope Street Food Bank
+            </button>
+          </a>
+          <a class="link" href="https://nourishup.org/">
+            <button class="link-button nourish-up">
+              Nourish Up: Lifting Through Food
+            </button>
+          </a>
+        </div>
+      </section>
+
+      <section class="columned-row">
+        <h2 class="form-heading">Contact Our Team</h2>
+        <form class="contact-form">
+          <label class="hide" for="first-name">Hi</label>
+          <input
+            class="form-input"
+            id="first-name"
+            type="text"
+            placeholder="First Name"
+          />
+          <label class="hide" for="last-name">Hi</label>
+          <input
+            class="form-input"
+            id="last-name"
+            type="text"
+            placeholder="Last Name"
+          />
+          <label class="hide" for="form-email">Hi</label>
+          <input
+            class="form-input"
+            id="form-email"
+            type="text"
+            placeholder="Email"
+          />
+          <label class="hide" for="form-tele">Hi</label>
+          <input
+            class="form-input"
+            id="form-tele"
+            type="text"
+            placeholder="Phone Number"
+          />
+          <div class="checkbox-container">
+            <label for="volunteer" class="reasons">
+              <input
+                type="checkbox"
+                name="reason"
+                value="volunteer"
+                id="volunteer"
+              />
+              Volunteer
+            </label>
+
+            <label for="partner" class="reasons">
+              <input
+                type="checkbox"
+                name="reason"
+                value="partner"
+                id="partner"
+              />
+              Potential Partner
+            </label>
+
+            <label for="assistance" class="reasons">
+              <input
+                type="checkbox"
+                name="reason"
+                value="assistance"
+                id="assistance"
+              />
+              Assistance
+            </label>
+
+            <label for="other" class="reasons">
+              <input type="checkbox" name="reason" value="other" id="other" />
+              Other
+            </label>
+          </div>
+          <textarea
+            class="comments"
+            name="reason"
+            id=""
+            cols="30"
+            placeholder="Enter additional comments"
+          ></textarea>
+        </form>
+      </section>
+    </main>
 
     <footer>
       <!-- Footer Text -->
@@ -97,4 +203,8 @@
   </body>
 
   <script src="script.js"></script>
+  <script
+    src="https://kit.fontawesome.com/9bd8cd2ed3.js"
+    crossorigin="anonymous"
+  ></script>
 </html>
