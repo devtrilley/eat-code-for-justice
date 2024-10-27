@@ -117,6 +117,12 @@
         <h2 class="form-heading">Contact Our Team</h2>
 
         <form class="contact-form">
+          <div class="error-container">
+            <p class="error-message fname-error"></p>
+            <p class="error-message lname-error"></p>
+            <p class="error-message email-error"></p>
+            <p class="error-message tele-error"></p>
+          </div>
           <div class="input-container">
             <label for="first-name" class="hide"></label>
             <input
@@ -140,16 +146,18 @@
               class="input-styling"
               type="text"
               id="email"
-              placeholder="Email"
+              placeholder="Email: jsmith@email.com"
             />
             <label for="telephone" class="hide"></label>
             <input
               class="input-styling"
               type="text"
               id="telephone"
-              placeholder="Telephone"
+              placeholder="Phone: 1234567890"
             />
           </div>
+
+          <h3 class="form-subheading">Reason for Contact:</h3>
 
           <div class="input-container">
             <div class="radio-container">
@@ -168,6 +176,7 @@
                 type="radio"
                 name="contact-reason"
                 id="partnering"
+                required
               />
               <label class="radio-label" for="partnering">Partnering</label>
             </div>
@@ -204,7 +213,7 @@
           </div>
 
           <div class="input-container">
-            <input class="submit-button" type="submit" value="Submit">
+            <input class="submit-button" type="submit" value="Submit" />
           </div>
         </form>
       </section>
@@ -221,7 +230,7 @@
     </footer>
   </body>
 
-  <script src="script.js"></script>
+  <script src="../scripts/script.js"></script>
   <script
     src="https://kit.fontawesome.com/9bd8cd2ed3.js"
     crossorigin="anonymous"
